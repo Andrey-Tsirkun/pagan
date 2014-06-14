@@ -1,0 +1,44 @@
+@import "sassy-buttons";
+
+.comment-wrapper {
+  .title {
+    margin-bottom: 15px;
+  }
+
+  input.form-submit {
+    @include sassy-button("matte", 2px, 16px, #fbfbfb, #eeeeee, #666666, "inset");
+    @include sassy-button-structure(2px, 16px, 5px 10px);
+  }
+
+  .comment {
+    border-left: 1px solid #CCCCCC;
+  }
+
+  .submitted {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #464848;
+  }
+
+  .links {
+    li{
+      a {
+        color: #666666;
+        text-transform: capitalize;
+        font: 11px/11px Arial,sans-serif;
+
+        &:hover {
+          border-bottom: 1px dotted #666666;
+        }
+      }
+    }
+  }
+
+  .user-picture {
+    img {
+      background: none repeat scroll 0 0 #FFFFFF;
+      border: 1px solid #F0F0F0;
+    }
+  }
+}
+
+

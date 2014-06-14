@@ -1,0 +1,50 @@
+.comment-wrapper {
+  .title {
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .comment {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+  }
+
+  .content {
+    padding-left: 64px;
+    padding-bottom: 7px;
+  }
+
+  .links {
+    float: right;
+    li{
+      &.last {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .submitted {
+    margin-bottom: 5px;
+    padding: 2px;
+    padding-left: 64px;
+    width: 100%;
+
+    .created {
+      float: right;
+      padding-right: 5px;
+    }
+  }
+
+  .user-picture {
+    position: absolute;
+    top: 0;
+
+    img {
+      padding: 4px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+@import "compass/reset.scss";
+@import "compass/layout.scss";
+
+@include sticky-footer(36px, ".wrapper", ".layout-footer", "#footer");
+
+@include breakpoint ($bpDesktop) {
+
+  .header {
+    height: 90px;
+  }
+
+  .wrapper, #footer {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: -36px;
+  }
+
+  main {
+    float: left;
+    width: 70%;
+  }
+
+  .right-sidebar {
+    float: left;
+    width: 30%;
+  }
+}
+
+.layout-footer {
+  clear: both;
+}
+
+.region-user {
+  height: 28px;
+  position: relative;
+
+  #block-block-1 {
+    float: left;
+
+    ul {
+      padding-top: 8px;
+    }
+  }
+}
+
+.subheader {
+  overflow: hidden;
+}
+
+.main-prefix {
+  padding: 0 15px;
+
+  .breadcrumb {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    padding: 0;
+  }
+
+  .block-search {
+    display: inline-block;
+    float: right;
+  }
+}
+
+main {
+  clear: both;
+  padding: 15px;
+
+  /*.block-system {
+    margin-bottom: 15px;
+  }*/
+}

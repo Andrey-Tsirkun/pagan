@@ -1,0 +1,173 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+@import "compass";
+
+html ,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a, a:link, a:visited {
+  color: #004276;
+  text-decoration: none;
+}
+
+body {
+  background: #ebece7;
+  font-family: $defaultFontFamily;
+}
+
+.geolocation-map img,
+.geolocation-views-map img{
+  max-width: none;
+}
+
+.node {
+  font-family: 	Arial,serif;
+  font-size: 12px;
+  color: #333333;
+
+  p {
+    line-height: 15px;
+    text-align: justify;
+  }
+
+  .colorbox {
+    display: block;
+
+    img {
+      padding: 5px;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+    }
+  }
+}
+
+h1.title {
+  font-family: Georgia,serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.wrapper {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+}
+
+.region-user {
+  background: none repeat scroll 0 0 #F9F9F9;
+  border-bottom: 1px solid #ECEDE8;
+  color: #666666;
+  font-size: 11px;
+  line-height: 30px;
+
+  #block-block-1 {
+
+    ul {
+      li {
+        border-right: 1px solid #3A93CC;
+        float: left;
+        list-style: none outside none;
+
+        &.last {
+          border: none;
+        }
+
+        a {
+          display: block;
+          font-size: 10px;
+          font-weight: normal;
+          line-height: 10px;
+          padding: 0 7px;
+          text-transform: capitalize;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  border-bottom: 1px solid #dddddd;
+}
+
+.subheader {
+  border-bottom: 1px solid #dddddd;
+  @include background-image(linear-gradient(top, #ffffff, #f7f7f7));
+
+}
+
+.right-sidebar {
+  border-left: 1px solid #dddddd;
+}
+
+#footer {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.block-breadcrumb{
+  margin-top: 2px;
+}
+.main-prefix{
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #ECEDE8;
+  color: #888888;
+  font-size: 11px;
+  height: 32px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  .breadcrumb {
+
+    .delimiter {
+      background: url("../images/icon-arrow-right.png") no-repeat transparent;
+      display: inline-block;
+      width: 4px;
+      height: 7px;
+    }
+  }
+
+  .block-search{
+    position: relative;
+
+    input[type="text"]{
+      color: #999999;
+      font-family: Georgia,serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 12px;
+      width: 160px;
+      height: 20px;
+      border: 1px solid #DFDFDF;
+    }
+
+    .form-submit{
+      height: 19px;
+      width: 19px;
+      text-indent: -9999px;
+      background: url("../images/search.png") no-repeat center;
+      border: none;
+      position: absolute;
+      right: 0px;
+      top: 6px;
+      border-left: 1px solid #DCDCDC;
+    }
+  }
+}
+
+

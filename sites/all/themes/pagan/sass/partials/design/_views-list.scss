@@ -1,0 +1,68 @@
+.view-thematic-links {
+  .views-row {
+    clear: both;
+  }
+
+  .views-field-title {
+    a {
+      color: #004276;
+      text-decoration: none;
+      font-family: Georgia, serif;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.25;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .views-field-filepath {
+    a {
+      border: 1px solid #ECEDE8;
+    }
+  }
+
+  .views-field-name ,
+  .views-field-created ,
+  .views-field-comment-count {
+    color: #666666;
+    font: normal 11px Arial,serif;
+  }
+
+  .views-field-body {
+    p {
+      font-family: Arial, Verdana, sans-serif;
+      font-size: 12px;
+      color: #333333;
+    }
+  }
+
+  .views-field-view-node {
+    a{
+      color: #666666;
+      font-family: Georgia,serif;
+      font-size: 11px;
+      font-style: italic;
+
+      &:hover{
+        border-bottom: 1px dotted #666666;
+      }
+    }
+  }
+
+  .views-field-comment-count{
+    border-left:1px solid #666666;
+  }
+
+  &.view-display-id-page_4 {
+    h3 {
+      font-family: Georgia,serif;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}

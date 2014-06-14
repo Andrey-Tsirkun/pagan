@@ -1,0 +1,21 @@
+form {
+
+  &.webform-client-form-10 {
+    input[type="text"] {
+      width: 60%;
+    }
+
+    input[type="email"] {
+      width: 60%;
+    }
+
+    .webform-component-textarea {
+      width: 60%;
+      .form-textarea-wrapper {
+        textarea {
+          resize: none;
+        }
+      }
+    }
+  }
+}

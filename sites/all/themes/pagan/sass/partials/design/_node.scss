@@ -1,0 +1,18 @@
+.page-node {
+  h1.title {
+    font-family: Georgia,serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.submitted {
+  color: #666666;
+  font-size: 11px;
+}

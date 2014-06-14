@@ -1,0 +1,48 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
+////////////////////////
+
+//////////////////////////////
+// Legacy Support Setup
+//////////////////////////////
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: true;
+
+$legacy-support-for-mozilla: false;
+
+////////////////////////
+// Base Import
+////////////////////////
+@import 'partials/global/base';
+
+////////////////////////
+// Import Style Guide
+////////////////////////
+@import 'partials/styleguide/style-guide';
+
+////////////////////////
+// Import Layout
+////////////////////////
+@import 'partials/layout/layout';
+@import 'partials/layout/calendar';
+@import 'partials/layout/views-list';
+@import 'partials/layout/node';
+@import 'partials/layout/comment';
+@import 'partials/layout/block';
+@import 'partials/layout/form';
+@import 'partials/layout/menu';
+
+////////////////////////
+// Import Design
+////////////////////////
+@import 'partials/design/design';
+@import 'partials/design/calendar';
+@import 'partials/design/views-list';
+@import 'partials/design/node';
+@import 'partials/design/comment';
+@import 'partials/design/block';
+@import 'partials/design/form';
+@import 'partials/design/menu';

@@ -1,0 +1,45 @@
+.calendar-container {
+  padding-bottom: 0;
+
+  .calendar-daynames {
+
+    .calendar-value{
+      padding: 5px 0;
+    }
+  }
+
+  .pretty-calendar-week {
+    padding: 0;
+    height: auto;
+
+    .blank {
+      .calendar-value {
+        height: 37px;
+      }
+    }
+
+    .calendar-value{
+      padding: 8px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .pretty-calendar-today {
+    .calendar-value{
+      height: auto;
+    }
+  }
+
+  .pretty-calendar-day ,
+  .pretty-calendar-weekend{
+    padding: 0;
+    height: auto;
+  }
+
+  .calendar-daynames{
+    margin: 0;
+    padding-top: 26px;
+    height: 46px;
+  }
+}

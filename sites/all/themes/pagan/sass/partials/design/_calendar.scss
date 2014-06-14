@@ -1,0 +1,54 @@
+.calendar-container {
+  color: #666;
+  font-size: 12px;
+  border: none;
+
+  a {
+    color: #467b89
+  }
+
+  .calendar-daynames {
+
+    .calendar-value{
+      font-size: 10px;
+      color: #666;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+      border-bottom: 1px solid #bbbbbb;
+      background: #f7f7f7;
+      @include background-image(linear-gradient(top, #f7f7f7, #f1f1f1));
+    }
+  }
+
+  .pretty-calendar-week {
+
+    .calendar-value{
+      color: #666;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid;
+      border-color: #ffffff #bbbbbb #bbbbbb #ffffff;
+      background: #ffffff;
+      @include background-image(linear-gradient(top, #ffffff, #e7e7e7));
+      border-radius: 0;
+      line-height: 19px;
+    }
+
+    .tooltip .calendar-value{
+      background: red;
+      color: white;
+    }
+  }
+
+  .pretty-calendar-today {
+    .calendar-value{
+      color: #fff;
+      border: 1px solid #467b89;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+      background: #6eafbf;
+      @include background-image(radial-gradient(50% 50%, #6eafbf, #569EB1));
+      line-height: 19px;
+    }
+  }
+}

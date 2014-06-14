@@ -1,0 +1,14 @@
+@import "sassy-buttons";
+
+form {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #dfdfdf;
+  }
+
+  input[type="submit"] {
+    @include sassy-button("matte", 2px, 16px, #fbfbfb, #eeeeee, #666666, "inset");
+    @include sassy-button-structure(2px, 16px, 5px 10px);
+  }
+}

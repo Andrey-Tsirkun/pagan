@@ -1,0 +1,63 @@
+.view-thematic-links {
+  .views-field-title {
+    a {
+      margin-bottom: 4px;
+      display: block;
+    }
+  }
+
+  .views-field-filepath {
+    float: left;
+    margin: 0 15px 10px 0;
+
+    a {
+      display: block;
+      padding: 4px;
+      position: relative;
+    }
+  }
+
+  .views-field-name ,
+  .views-field-created ,
+  .views-field-comment-count {
+    display: inline-block;
+  }
+
+  .views-field-body {
+    padding-top: 6px;
+    display: inline;
+
+    p {
+      margin: 0;
+      display: inline;
+    }
+  }
+
+  .views-field-view-node {
+    display: inline;
+    margin-left: 3px;
+  }
+
+  .views-field-name {
+    margin-right: 3px;
+  }
+
+  .views-field-comment-count{
+    margin: 0 3px;
+    padding-left: 8px;
+  }
+
+  &.view-display-id-page_4 {
+    h3 {
+      margin: 0 0 10px;
+    }
+
+    .views-date {
+      display: inline-block;
+    }
+
+    .views-title {
+      display: inline-block;
+    }
+  }
+}

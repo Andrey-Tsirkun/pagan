@@ -1,0 +1,73 @@
+.block {
+  & > h2 {
+    padding: 5px 15px 4px;
+  }
+
+  &.block-quicktabs {
+    .quicktabs-tabs {
+      display: table;
+      height: 32px;
+      width: 100%;
+
+      li {
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        & > a {
+          display: block;
+          height: 30px;
+          padding: 0 8px;
+
+          &.active {
+            bottom: -1px;
+            position: relative;
+          }
+        }
+
+        &.last {
+          a {
+            padding-right: 6px;
+          }
+        }
+      }
+    }
+
+    .quicktabs_main {
+      height: 284px;
+      clear: both;
+
+      .view {
+        .views-row {
+          clear: both;
+          overflow: hidden;
+
+          & > a {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 10px 5px;
+          }
+
+          .views-teaserimage ,
+          .views-userpic {
+            float: left;
+
+            img {
+              padding: 4px;
+              width: 50px;
+              height: 50px;
+              display: block;
+              margin: 0 10px 5px 0;
+            }
+          }
+        }
+
+        &.view-last-comments {
+          .views-authorname,
+          .views-commentcreated {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
