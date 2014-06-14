@@ -227,6 +227,16 @@ function pagan_menu_link($variables) {
 function pagan_preprocess_node(&$vars) {
   $vars['submitted'] = t('Апублікаваў'). ': ' . t($vars['name']) . ' ' . t('@date', array('@date' => beldate('j F Y', $vars['created'])));
   unset($vars['content']['links']['statistics']['#links']['statistics_counter']['title']);
+
+  $node = $vars['node'];
+
+  if ($vars['type'] == 'book') {
+    foreach ($node->field_book_file[LANGUAGE_NONE] as $delta) {
+      $vars['content']['field_book_file']['#title'] = $vars['content']['field_book_file']['#title'] . "(" . $vars['content']['field_book_file']['filesize'] . ")";
+    }
+
+    //$vars['content']['field_book_file']['#title'] = $node->field_book_file[LANGUAGE_NONE][0]['filesize'];
+  }
 }
 
 function pagan_form_search_block_form_alter(&$form, &$form_state, $form_id) {

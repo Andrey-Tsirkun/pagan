@@ -21,8 +21,21 @@ a, a:link, a:visited {
 }
 
 body {
-  background: #ebece7;
+  background: rgba(188, 188, 188, 0.44);
   font-family: $defaultFontFamily;
+}
+
+.bg-wrapper {
+  background: url('../images/bg.png') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .geolocation-map img,

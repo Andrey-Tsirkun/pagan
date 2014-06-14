@@ -439,62 +439,64 @@ html, body {
     width: 960px;
     margin: 0 auto;
     margin-bottom: -36px;
+    position: relative;
+    z-index: 100;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000328}}
   main {
     float: left;
     width: 70%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000333}}
   .right-sidebar {
     float: left;
     width: 30%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000339}}
 .layout-footer {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000343}}
 .region-user {
   height: 28px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000347}}
 .region-user #block-block-1 {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000350}}
 .region-user #block-block-1 ul {
   padding-top: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000356}}
 .subheader {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000360}}
 .main-prefix {
   padding: 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000363}}
 .main-prefix .breadcrumb {
   display: inline-block;
   width: 70%;
   float: left;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000370}}
 .main-prefix .block-search {
   display: inline-block;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_layout\.scss}line{font-family:\0000376}}
 main {
   clear: both;
   padding: 15px;
@@ -624,7 +626,21 @@ main {
 .page-node .node-place .comment-wrapper {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_node\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_node\.scss}line{font-family:\0000332}}
+.page-node .node-book .field-name-field-book-file .file img {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_node\.scss}line{font-family:\0000337}}
+.page-node .node-book .field-name-field-book-file .file a {
+  display: inline-block;
+  margin-left: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_node\.scss}line{font-family:\0000346}}
+.page-node .node-event .field-name-field-event-date {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_node\.scss}line{font-family:\0000353}}
 .page-node .field-name-body .field-item .colorbox {
   clear: both;
 }
@@ -828,39 +844,53 @@ a, a:link, a:visited {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000323}}
 body {
-  background: #ebece7;
+  background: rgba(188, 188, 188, 0.44);
   font-family: Tahoma, Arial, Verdana, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000328}}
+.bg-wrapper {
+  background: url("../images/bg.png") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000342}}
 .geolocation-map img,
 .geolocation-views-map img {
   max-width: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000346}}
 .node {
   font-family: Arial,serif;
   font-size: 12px;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000351}}
 .node p {
   line-height: 15px;
   text-align: justify;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000356}}
 .node .colorbox {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000359}}
 .node .colorbox img {
   padding: 5px;
   background: #ffffff;
   border: 1px solid #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000367}}
 h1.title {
   font-family: Georgia,serif;
   font-size: 22px;
@@ -870,13 +900,13 @@ h1.title {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000376}}
 .wrapper {
   border: 1px solid #dddddd;
   background: #ffffff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000381}}
 .region-user {
   background: none repeat scroll 0 0 #F9F9F9;
   border-bottom: 1px solid #ECEDE8;
@@ -884,17 +914,17 @@ h1.title {
   font-size: 11px;
   line-height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000391}}
 .region-user #block-block-1 ul li {
   border-right: 1px solid #3A93CC;
   float: left;
   list-style: none outside none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000396}}
 .region-user #block-block-1 ul li.last {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003100}}
 .region-user #block-block-1 ul li a {
   display: block;
   font-size: 10px;
@@ -903,17 +933,17 @@ h1.title {
   padding: 0 7px;
   text-transform: capitalize;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003108}}
 .region-user #block-block-1 ul li a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003117}}
 .header {
   border-bottom: 1px solid #dddddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003121}}
 .subheader {
   border-bottom: 1px solid #dddddd;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f7f7f7));
@@ -923,23 +953,23 @@ h1.title {
   background-image: linear-gradient(top, #ffffff, #f7f7f7);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003127}}
 .right-sidebar {
   border-left: 1px solid #dddddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003131}}
 #footer {
   background: #ffffff;
   border: 1px solid #dddddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003136}}
 .block-breadcrumb {
   margin-top: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003139}}
 .main-prefix {
   background: none repeat scroll 0 0 #FFFFFF;
   border-bottom: 1px solid #ECEDE8;
@@ -949,18 +979,18 @@ h1.title {
   line-height: 30px;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003150}}
 .main-prefix .breadcrumb .delimiter {
   background: url("../images/icon-arrow-right.png") no-repeat transparent;
   display: inline-block;
   width: 4px;
   height: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003158}}
 .main-prefix .block-search {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003161}}
 .main-prefix .block-search input[type="text"] {
   color: #999999;
   font-family: Georgia,serif;
@@ -971,7 +1001,7 @@ h1.title {
   height: 20px;
   border: 1px solid #DFDFDF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_design\.scss}line{font-family:\00003172}}
 .main-prefix .block-search .form-submit {
   height: 19px;
   width: 19px;
@@ -1115,7 +1145,28 @@ h1.title {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_node\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_node\.scss}line{font-family:\0000316}}
+.node-event .field-name-field-event-date {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Georgia,serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000000;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_node\.scss}line{font-family:\0000330}}
+.node-book .field-name-field-book-file .field-label {
+  line-height: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_node\.scss}line{font-family:\0000335}}
+.node-book .field-name-field-book-file .file a {
+  line-height: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/design\/_node\.scss}line{font-family:\0000342}}
 .submitted {
   color: #666666;
   font-size: 11px;

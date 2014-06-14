@@ -66,6 +66,7 @@
  * @see template_process()
  */
 ?>
+<div class="bg-wrapper"></div>
 
 <div class="wrapper equal-height">
 

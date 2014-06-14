@@ -9,5 +9,6 @@
         $(window).resize(function(){
             equalheight('.equal-height');
         });
+
     });
 })(jQuery);

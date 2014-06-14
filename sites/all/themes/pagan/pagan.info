@@ -32,6 +32,7 @@ stylesheets[print][] = 'stylesheets/print.css'
 
 scripts[] = 'js/equalheight.js'
 scripts[] = 'js/pagan.js'
+scripts[] = 'js/jquery.scrolling-parallax.js'
 
 ; If installed through Bower
 ; scripts[] = 'components/formalize/assets/js/jquery.formalize.min.js'
