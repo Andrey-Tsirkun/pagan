@@ -744,6 +744,11 @@ main {
 .block.block-quicktabs .quicktabs_main .view.view-last-comments .views-commentcreated {
   display: inline-block;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_block\.scss}line{font-family:\0000374}}
+.block#block-views-views-ticker-block {
+  width: 50%;
+  float: left;
+}
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/pagan\/sites\/all\/themes\/pagan\/sass\/partials\/layout\/_form\.scss}line{font-family:\000034}}
 form.webform-client-form-10 input[type="text"] {
