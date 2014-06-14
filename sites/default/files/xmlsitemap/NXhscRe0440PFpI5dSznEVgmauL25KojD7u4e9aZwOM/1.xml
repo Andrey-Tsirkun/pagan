@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://pagan/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://pagan/articles</loc></url>
+<url><loc>http://pagan/audio</loc></url>
+<url><loc>http://pagan/calendar</loc></url>
+<url><loc>http://pagan/events</loc></url>
+<url><loc>http://pagan/library</loc></url>
+<url><loc>http://pagan/map</loc></url>
+<url><loc>http://pagan/contact</loc></url>
+<url><loc>http://pagan/sitemap.xml</loc></url>
+<url><loc>http://pagan/user/1</loc></url>
+<url><loc>http://pagan/contact</loc><lastmod>2014-05-10T10:47Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://pagan/article/ololo.php</loc><lastmod>2014-05-31T09:47Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://pagan/date/ololo.php</loc><lastmod>2014-05-17T11:49Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://pagan/date/rtyrt.php</loc><lastmod>2014-05-17T11:50Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://pagan/date/dhrg.php</loc><lastmod>2014-05-17T12:04Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://pagan/article/ololo-2.php</loc><lastmod>2014-05-31T09:39Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://pagan/content/test</loc><lastmod>2014-04-30T07:47Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://pagan/content/kremyanec</loc><lastmod>2014-04-12T08:42Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://pagan/content/palesski-etnalingvistychny-sbornik</loc><lastmod>2014-04-05T09:59Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://pagan/content/test-audio</loc><lastmod>2014-05-31T07:30Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://pagan/content/test-audio-2</loc><lastmod>2014-05-01T07:26Z</lastmod><changefreq>monthly</changefreq></url>
+</urlset>
