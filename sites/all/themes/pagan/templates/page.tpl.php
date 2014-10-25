@@ -76,11 +76,14 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($page['header']): ?>
-      <header class="header" role="banner">
-        <?php print render($page['header']); ?>
-      </header>
-    <?php endif; ?>
+    <header class="header" role="banner">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <img class="site-logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      <?php endif; ?>
+      <?php print render($page['header']); ?>
+    </header>
 
     <?php if ($page['subheader']): ?>
       <div class="subheader">
@@ -98,9 +101,13 @@
 
 
     <?php if ($page['content']): ?>
-      <main id="main" role="main" class="equal-height">
+      <main id="main" role="main">
 
        <h1 class="title" id="page-title"><?php print $title; ?></h1>
+
+       <?php if ($messages): ?>
+         <?php print render($messages); ?>
+       <?php endif; ?>
 
         <?php if ($tabs): ?>
           <div class="tabs clearfix">
@@ -113,7 +120,7 @@
     <?php endif; ?>
 
     <?php if ($page['right_sidebar']): ?>
-      <div class="right-sidebar equal-height">
+      <div class="right-sidebar">
         <?php print render($page['right_sidebar']); ?>
       </div>
     <?php endif; ?>

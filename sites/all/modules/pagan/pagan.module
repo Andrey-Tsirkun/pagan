@@ -1,0 +1,13 @@
+<?php
+
+function pagan_menu_alter(&$items) {
+  // Remove tabs in default registration form
+  $items['user']['type'] = MENU_CALLBACK;
+  $items['user/register']['type'] = MENU_CALLBACK;
+  $items['user/password']['type'] = MENU_CALLBACK;
+
+  // Remove the tabs in the new Auto Assign Role registration form
+  $items['developer']['type'] = MENU_CALLBACK;
+  $items['developer/register/register']['type'] = MENU_CALLBACK;
+  $items['developer/register/password']['type'] = MENU_CALLBACK;
+}

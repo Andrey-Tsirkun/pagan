@@ -1,0 +1,5 @@
+core = "7.x"
+version = "7.0-1"
+package = Custom
+description = "Custom Code For Pagan Site"
+name = "Pagan Module"
