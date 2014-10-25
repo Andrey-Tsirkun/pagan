@@ -48,3 +48,20 @@
     }
   }
 }
+
+.comment-form {
+  .form-type-item {
+    label {
+      float: left;
+      margin-right: 10px;
+
+      &:after {
+        content: ':';
+      }
+    }
+
+    .username {
+      text-transform: capitalize;
+    }
+  }
+}

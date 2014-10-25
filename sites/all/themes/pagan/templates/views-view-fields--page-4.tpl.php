@@ -31,6 +31,6 @@
 ?>
 
 <a href="<?php print $node_url; ?>">
-    <?php if ($fields['field_date_date']) {print '<div class="views-date">' . $fields['field_date_date'] -> content . '</div>'; } ?>
-    <?php if ($fields['title']) {print '<div class="views-title">' . $fields['title'] -> content . '</div>'; } ?>
+    <?php if ($fields['field_date_date']) {print date_to_genitive($fields['field_date_date']->content); } ?>
+    <?php if ($fields['title']) {print $fields['title'] -> content; } ?>
 </a>

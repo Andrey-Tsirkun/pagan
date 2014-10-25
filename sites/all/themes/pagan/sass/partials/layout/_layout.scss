@@ -15,12 +15,15 @@
 
   .header {
     height: 90px;
+    padding: 0 10px;
   }
 
   .wrapper, #footer {
     width: 960px;
     margin: 0 auto;
     margin-bottom: -36px;
+    position: relative;
+    z-index: 100;
   }
 
   main {

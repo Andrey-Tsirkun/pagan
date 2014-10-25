@@ -12,6 +12,33 @@
   }
 }
 
+.node-event {
+  .field-name-field-event-date {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Georgia,serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000000;
+    font-style: italic;
+  }
+}
+
+.node-book {
+  .field-name-field-book-file {
+    .field-label {
+      line-height: 18px;
+    }
+
+    .file {
+      a {
+        line-height: 18px;
+      }
+    }
+  }
+}
+
 .submitted {
   color: #666666;
   font-size: 11px;

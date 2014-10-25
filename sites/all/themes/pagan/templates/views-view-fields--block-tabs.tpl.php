@@ -31,8 +31,8 @@
 ?>
 
 <a href="<?php print $node_url; ?>">
-    <?php if ($fields['filepath']) {print '<div class="views-teaserimage">' . $fields['filepath'] -> content . '</div>'; } ?>
-    <?php if ($fields['title']) {print '<div class="views-title">' . $fields['title'] -> content . '</div>'; } ?>
-    <?php if ($fields['comment_count']) {print '<div class="views-commentcount">' . $fields['comment_count'] -> content . '</div>'; } ?>
-    <?php if ($fields['totalcount']) {print '<div class="views-viewcount">' . $fields['totalcount'] -> content . '</div>'; } ?>
+    <?php if (isset($fields['filepath'])) {print '<div class="views-teaserimage">' . $fields['filepath'] -> content . '</div>'; } ?>
+    <?php if (isset($fields['title'])) {print '<div class="views-title">' . $fields['title'] -> content . '</div>'; } ?>
+    <?php if (isset($fields['comment_count'])) {print '<div class="views-commentcount">' . $fields['comment_count'] -> content . '</div>'; } ?>
+    <?php if (isset($fields['totalcount'])) {print '<div class="views-viewcount">' . $fields['totalcount'] -> content . '</div>'; } ?>
 </a>

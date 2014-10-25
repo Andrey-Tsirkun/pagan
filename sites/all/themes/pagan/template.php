@@ -20,7 +20,7 @@ function pagan_preprocess_maintenance_page(&$vars) {
 }
 
 /**
- * Implements hook_modernizr_load_alter().
+ * Implements hook_modernizr_load_alter().$title
  *
  * @return
  *   An array to be output as yepnope testObjects.
@@ -51,6 +51,11 @@ function pagan_preprocess_html(&$vars) {
 function pagan_preprocess_page(&$vars) {
   $theme_path = drupal_get_path('theme', 'pagan');
   drupal_add_js($theme_path.'/js/footer-js.js', array('type' => 'file', 'scope' => 'footer'));
+
+  if (isset($vars['node']) && $vars['node']->type == 'date') {
+      $data_title = date_to_genitive(format_date(strtotime($vars['node']->field_date_date['und'][0]['value']) ,'custom','j F'))  . ' ' . $vars['node']->title;
+      drupal_set_title($data_title);
+  }
 }
 
 /**
@@ -98,6 +103,7 @@ function pagan_preprocess_entity(&$vars) {
 /* -- Delete this line if you want to use this function
 function pagan_preprocess_node(&$vars) {
   $node = $vars['node'];
+  dsm($vars);
 }
 // */
 
@@ -109,7 +115,7 @@ function pagan_preprocess_node(&$vars) {
  * @param $hook
  *   The name of the template being rendered ("field" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
 function pagan_preprocess_field(&$vars, $hook) {
 
 }
@@ -167,9 +173,9 @@ function pagan_js_alter(&$js) {
 }
 // */
 
-function beldate($format, $timestamp = 0, $nominative_month = false){
-  if(!$timestamp) $timestamp = time();
-  elseif(!preg_match("/^[0-9]+$/", $timestamp)) $timestamp = strtotime($timestamp);
+function beldate($format, $timestamp, $nominative_month = false){
+  if(!isset($timestamp)) {$timestamp = time();}
+  elseif(!preg_match("/^[0-9]+$/", $timestamp)) {$timestamp = strtotime($timestamp);}
   $F = $nominative_month ? array(1=>"Студзень", "Люты", "Сакавік", "Красавік", "Травень", "Чэрвень", "Ліпень", "Жнівень", "Верасень", "Кастрычнік", "Лістапад", "Снежань") : array(1=>"Студня", "Лютага", "Сакавіка", "Красавіка", "Травня", "Чэрвеня", "Ліпеня", "Жніўня", "Верасня", "Кастрычніка", "Лістапада", "Снежня");
   $M = array(1=>"Сту", "Лют", "Сак", "Крас", "Тра", "Чэр", "Лип", "Жні", "Вер", "Кас", "Ліс", "Сне");
   $l = array("Нядзеля", "Панядзелак", "Аўторак", "Серада", "Чацьвер", "Пятніца", "Субота");
@@ -179,7 +185,26 @@ function beldate($format, $timestamp = 0, $nominative_month = false){
   $format = str_replace("M", $M[date("n", $timestamp)], $format);
   $format = str_replace("l", $l[date("w", $timestamp)], $format);
   $format = str_replace("D", $D[date("w", $timestamp)], $format);
+
   return date($format, $timestamp);
+}
+
+function date_to_genitive($string) {
+
+  $string = str_replace("Студзень", "Студня", $string);
+  $string = str_replace("Люты", "Лютага", $string);
+  $string = str_replace("Сакавiк", "Сакавiка", $string);
+  $string = str_replace("Красавiк", "Красавiка", $string);
+  $string = str_replace("Май", "Мая", $string);
+  $string = str_replace("Чэрвень", "Чэрвеня", $string);
+  $string = str_replace("Лiпень", "Лiпеня", $string);
+  $string = str_replace("Жнiвень", "Жнiўня", $string);
+  $string = str_replace("Верасень", "Верасня", $string);
+  $string = str_replace("Кастрычнiк", "Кастрычнiка", $string);
+  $string = str_replace("Лiстапад", "Лiстапада", $string);
+  $string = str_replace("Снежань", "Снежня", $string);
+	
+    return $string;
 }
 
 function bel2translit($string){
@@ -235,4 +260,26 @@ function pagan_form_search_block_form_alter(&$form, &$form_state, $form_id) {
 
 function pagan_form_webform_client_form_10_alter(&$form, &$form_state, $form_id) {
     $form['actions']['submit']['#value'] = 'Адправіць';
+}
+
+function pagan_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+    if (isset($form['account']['name']['#title'])) {
+        $form['account']['name']['#attributes']['placeholder'] = $form['account']['name']['#title'];
+        unset($form['account']['name']['#title']);
+    }
+    if (isset($form['account']['mail']['#title'])) {
+        $form['account']['mail']['#attributes']['placeholder'] = $form['account']['mail']['#title'];
+        unset($form['account']['mail']['#title']);
+    }
+}
+
+function pagan_form_user_login_alter(&$form, &$form_state, $form_id) {
+    if (isset($form['name']['#title'])) {
+        $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
+        unset($form['name']['#title']);
+    }
+    if (isset($form['pass']['#title'])) {
+        $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
+        unset($form['pass']['#title']);
+    }
 }

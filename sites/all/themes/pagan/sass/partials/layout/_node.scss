@@ -25,6 +25,29 @@
     }
   }
 
+  .node-book {
+    .field-name-field-book-file {
+
+      .file {
+        img {
+          display: inline-block;
+          float: left;
+        }
+
+        a {
+          display: inline-block;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .node-event {
+    .field-name-field-event-date {
+      margin-bottom: 10px;
+    }
+  }
+
   .field-name-body {
     .field-item {
       .colorbox {

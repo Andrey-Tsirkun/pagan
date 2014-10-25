@@ -11,4 +11,9 @@ form {
     @include sassy-button("matte", 2px, 16px, #fbfbfb, #eeeeee, #666666, "inset");
     @include sassy-button-structure(2px, 16px, 5px 10px);
   }
+
+  .description {
+    color: #cbcbcb;
+    font-size: 12px;
+  }
 }
