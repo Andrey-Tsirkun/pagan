@@ -17,6 +17,14 @@ function teaserimage_admin_settings($form, &$form_state) {
     '#options' => image_style_options(TRUE),
     '#required' => TRUE,
   );
+  $form['default_thumbnail_settings']['teaserimage_css_classes'] = array(
+    '#type' => 'textfield',
+    '#title' => t('CSS class(es)'),
+    '#default_value' => variable_get('teaserimage_css_classes', 'teaserimage'),
+    '#description' => t('CSS classes for a thumbnails.'),
+    '#element_validate' => array('_teaserimage_validate_css_class'),
+    '#size' => '50',
+  );
   $form['default_thumbnail_settings']['teaserimage_min_height'] = array(
     '#type' => 'textfield',
     '#title' => t('Minimum height'),

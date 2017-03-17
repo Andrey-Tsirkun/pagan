@@ -30,18 +30,17 @@ INSTALLATION
 
  1. Drop the 'jplayer' folder into the modules directory '/sites/all/modules/'.
 
- 2. Download jPlayer from http://www.jplayer.org/download/. The downloaded
-    directory only contains 2 files, 'jquery.jplayer.min.js' and
-    'Jplayer.swf'. Place these two files in 'sites/all/libraries/jplayer/'.
+ 2. Download jPlayer from http://www.jplayer.org/download/.
 
- 3. In your Drupal site, enable the module under Administration -> Modules
-    '?q=/admin/modules'.
+ 3. Expand the zip or tar.gz file and then copy the dist/jplayer folder to 'sites/all/libraries/jplayer/'.
 
- 4. Global admin settings for jPlayer can be found Administration ->
-    Configuration -> jPlayer '?q=admin/config/media/jplayer'.
+ 4. In your Drupal site, enable the module under Administration -> Modules.
 
- 5. When you manage the display of file fields within your content types 
-    '?q=admin/structure/types/manage/{type}/display', choose 'jPlayer - Player'
+ 5. Global admin settings for jPlayer can be found Administration ->
+    Configuration -> jPlayer 'admin/config/media/jplayer'.
+
+ 6. When you manage the display of file fields within your content types
+    'admin/structure/types/manage/{type}/display', choose 'jPlayer - Player'
     as the format. You can then configure the settings available for that
     instance.
 
@@ -147,13 +146,29 @@ http://www.jplayer.org/support/
 If the problem is with the jPlayer Drupal module, please file a support request
 at http://drupal.org/project/issues/jplayer.
 
+FAQ
+___
 
-SPONSORSHIP
------------
+Q: Player is not visible onscreen
+A1: is the widget type for the field set to 'jPlayer'? If in doubt, check the
+ html for the page includes elements with classes such as jp-audio or
+ jp-playlist in the expected area).
+A2: has the jplayer module's CSS been included on the page?
+A3: has the jPlayer JS been included on the page?
 
-The D7 branch of this module is currently sponsored by Holy Trinity Brompton
-(http://www.htb.org.uk), and Cultivate4 (http://www.cultivatefour.com). Work has
-been undertaken by Jordan de Laune.
+Q: Player apparently there but is completely unresponsive (no JS events attached
+ to controls)
+A1: check to see that JavaScript enabled on your browser
+A2: Check that you are not relying on a version of Flash being installed that
+ isn't present or is too old.
+A3: check you are using jQuery >= 1.4 and jQuery <= 2.0.
 
-The original D6 module was written by Nate Haug and was maintained by Blazej
-Owczarczyk.
+Q: Player active (JS events applied, buttons respond when clicked), but won't
+ play
+A1: Check that the browser and platform you're testing with is able to play the
+ files you're giving it when given a direct link. For example, some Linux-based
+  platforms have no support for mp3 file playback out of the box.
+A2: See http://jplayer.org/ for supported file formats.
+
+Q: Which versions of the jPlayer library are known to work with the module?
+A1: The Drupal 7 jplayer module has been tested against jPlayer version 2.9.2.

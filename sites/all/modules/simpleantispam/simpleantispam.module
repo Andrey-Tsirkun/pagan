@@ -89,7 +89,7 @@ function simpleantispam_form_validate($form, $form_state) {
     }
   }
 
-  user_cookie_save(array('simpleantispam_state' => $form_state['values']['smplntspm1']));
+  setcookie('simpleantispamState', $form_state['values']['smplntspm1'], REQUEST_TIME + 31536000, base_path());
 }
 
 /**
