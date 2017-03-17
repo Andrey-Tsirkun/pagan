@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="//pagan/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>http://pagan/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://pagan/articles</loc></url>
@@ -10,20 +10,20 @@
 <url><loc>http://pagan/map</loc></url>
 <url><loc>http://pagan/contact</loc></url>
 <url><loc>http://pagan/sitemap.xml</loc></url>
-<url><loc>http://pagan/user/1</loc></url>
-<url><loc>http://pagan/contact</loc><lastmod>2014-05-10T10:47Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/article/ololo.php</loc><lastmod>2014-05-31T09:47Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/date/ololo.php</loc><lastmod>2014-05-17T11:49Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/date/rtyrt.php</loc><lastmod>2014-05-17T11:50Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/date/dhrg.php</loc><lastmod>2014-05-17T12:04Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/article/ololo-2.php</loc><lastmod>2014-09-13T09:36Z</lastmod><changefreq>monthly</changefreq></url>
-<url><loc>http://pagan/date/testavaya-data.php</loc><lastmod>2014-07-27T09:34Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/article/yashche-neshta.php</loc><lastmod>2014-10-11T07:02Z</lastmod><changefreq>daily</changefreq></url>
-<url><loc>http://pagan/article/yashche-neshta-2.php</loc><lastmod>2014-10-11T07:01Z</lastmod><changefreq>daily</changefreq></url>
-<url><loc>http://pagan/content/yashche</loc><lastmod>2014-09-20T06:47Z</lastmod><changefreq>monthly</changefreq></url>
-<url><loc>http://pagan/content/test</loc><lastmod>2014-10-11T07:01Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/content/kremyanec</loc><lastmod>2014-04-12T08:42Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/content/palesski-etnalingvistychny-sbornik</loc><lastmod>2014-09-13T07:12Z</lastmod><changefreq>monthly</changefreq></url>
-<url><loc>http://pagan/content/test-audio</loc><lastmod>2014-05-31T07:30Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://pagan/content/test-audio-2</loc><lastmod>2014-05-01T07:26Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://pagan/contact</loc><lastmod>2014-05-10T10:47Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/article/ololo.php</loc><lastmod>2014-05-31T09:47Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/date/ololo.php</loc><lastmod>2014-05-17T11:49Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/date/rtyrt.php</loc><lastmod>2014-05-17T11:50Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/date/dhrg.php</loc><lastmod>2014-05-17T12:04Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/article/ololo-2.php</loc><lastmod>2014-09-13T09:36Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/date/testavaya-data.php</loc><lastmod>2014-07-27T09:34Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/article/yashche-neshta.php</loc><lastmod>2014-10-11T07:02Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/article/yashche-neshta-2.php</loc><lastmod>2014-10-11T07:01Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/yashche</loc><lastmod>2014-09-20T06:47Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/test</loc><lastmod>2014-10-11T07:01Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/kremyanec</loc><lastmod>2014-04-12T08:42Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/palesski-etnalingvistychny-sbornik</loc><lastmod>2014-09-13T07:12Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/test-audio</loc><lastmod>2014-05-31T07:30Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/content/test-audio-2</loc><lastmod>2014-05-01T07:26Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://pagan/users/admin</loc></url>
 </urlset>

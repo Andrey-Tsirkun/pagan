@@ -118,6 +118,8 @@ class views_plugin_display_page extends views_plugin_display {
         'access arguments' => $access_arguments,
         // Identify URL embedded arguments and correlate them to a handler
         'load arguments'  => array($this->view->name, $this->display->id, '%index'),
+        // Make sure the menu router knows where views_page is.
+        'module' => 'views',
       );
       $menu = $this->get_option('menu');
       if (empty($menu)) {
@@ -182,6 +184,8 @@ class views_plugin_display_page extends views_plugin_display {
               'title' => $tab_options['title'],
               'description' => $tab_options['description'],
               'menu_name' => $tab_options['name'],
+              // Make sure the menu router knows where views_page is.
+              'module' => 'views',
             );
             switch ($tab_options['type']) {
               default:
@@ -216,11 +220,11 @@ class views_plugin_display_page extends views_plugin_display {
     // display, and arguments should be set on the view.
     $this->view->build();
     if (!empty($this->view->build_info['fail'])) {
-      return drupal_not_found();
+      return MENU_NOT_FOUND;
     }
 
     if (!empty($this->view->build_info['denied'])) {
-      return drupal_access_denied();
+      return MENU_ACCESS_DENIED;
     }
 
     $this->view->get_breadcrumb(TRUE);
