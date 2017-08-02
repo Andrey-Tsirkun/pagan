@@ -1,7 +1,7 @@
 jQuery( function($) {
-	
+
 	$(document).ready(function(){
-		
+
 		// Main menu superfish
 		$('#main-menu > ul').addClass('dropdown-menu sf-menu');
 		$('#main-menu > ul').superfish({
@@ -22,7 +22,12 @@ jQuery( function($) {
 			$.sidr('close', 'sidr-main');
 			return false;
 		});
-		
+
+    $(window).scroll(function(){
+      var x = $(this).scrollTop();
+      $('body').css('background-position','0% '+parseInt(-x/10)+'px');
+    });
+
 
 	}); // End doc ready
 
@@ -42,7 +47,7 @@ jQuery( function($) {
 			nextText: '<span class="fa fa-caret-right"></span>',
 			controlsContainer: ".flexslider-container"
 		});
-		
+
 	}); // End on window load
-	
+
 });
