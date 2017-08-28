@@ -3,6 +3,7 @@ description = Multipurpose Theme is a premium Drupal 7 theme. Developed by <a hr
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = style.css
+stylesheets[all][] = overridden.css
 stylesheets[all][] = css/responsive.css
 scripts[] = js/retina.js
 scripts[] = js/plugins.js

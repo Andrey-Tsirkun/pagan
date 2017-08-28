@@ -1,0 +1,68 @@
+/*Event Calendar Start*/
+.calendar-container {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding-bottom: 0;
+}
+.calendar-container .pretty-calendar-week {
+  padding: 0;
+}
+.pretty-calendar-month .calendar-prev,
+.pretty-calendar-month .calendar-next {
+  top: 8px;
+}
+.calendar-daynames {
+  height: 28px;
+  padding-top: 31px;
+  margin-bottom: 0;
+  background: #fff;
+}
+.calendar-value {
+  height: 32px;
+  line-height: 32px;
+}
+.pretty-calendar-month .month-title {
+  padding-top: 0;
+}
+.pretty-calendar-week {
+  display: flex;
+  height: 32px;
+  border-bottom: 1px solid #ddd;
+}
+.pretty-calendar-week:last-child {
+  border-bottom: none;
+}
+.pretty-calendar-week > div,
+.pretty-calendar-week > a {
+  border-right: 1px solid #ddd;
+}
+.pretty-calendar-week > a .pretty-calendar-day {
+  width: 100%;
+}
+.pretty-calendar-week > div.pretty-calendar-last {
+  border-right: none;
+}
+.calendar-container .pretty-calendar-weekend,
+.calendar-container .pretty-calendar-day,
+.tooltip {
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 32px;
+}
+.pretty-calendar-week, .calendar-daynames {
+  /*padding: 0;*/
+}
+.pretty-calendar-week .calendar-value {
+  width: auto;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.pretty-calendar-week .pretty-calendar-today .calendar-value {
+  height: 26px;
+  width: 26px;
+  margin-top: 1px;
+  line-height: 26px;
+}
+/*Event Calendar End*/
