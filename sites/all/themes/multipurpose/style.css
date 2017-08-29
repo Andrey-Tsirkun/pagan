@@ -181,7 +181,7 @@ a { outline: 0 }
 /*styling*/
 #site-navigation-wrap { background: #222; margin: 0 -20px 40px; height: 55px; }
 #site-navigation #main-menu > ul li { display: block; float: left; height: 55px; line-height: 55px; }
-#site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; padding: 0 30px; }
+#site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; padding: 0 30px; transition: background 0.3s }
 #site-navigation #main-menu > ul > li > a:hover,
 #site-navigation #main-menu > ul > li.sfHover > a,
 #site-navigation #main-menu > ul > li > a.active,
@@ -262,6 +262,7 @@ html[xmlns] .slides {display: block;}
 h1.page-title {
   margin: 5px 0 10px;
   font-size: 2em;
+  text-align: center;
 }
 
 #content .node-teaser {
@@ -327,7 +328,7 @@ h1.page-title {
 #footer-wrap .span_1_of_3.col-3 { padding-left: 10px; }
 .footer-block > ul > li { padding: 2px 0; border-bottom: 1px solid #333; }
 .footer-block > ul > li:first-child { border-top: 1px solid #333; }
-#copyright-wrap { background: #4e4e4e; border-top: 1px solid #222; margin: 0 -30px 0; padding: 20px 30px; color: #666; text-align: center; }
+#copyright-wrap { background: #4e4e4e; border-top: 1px solid #222; margin: 0 -20px 0; padding: 20px 30px; color: #666; text-align: center; }
 #copyright-wrap a:hover{ color: #fff; }
 
 /*aligns*/
@@ -586,9 +587,16 @@ ol.search-results { padding-left: 0; }
 }
 
 .meta li {
-  display: inline;
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
   margin-right: 5px;
-  margin-right: 10px;
+}
+
+.meta li:last-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .meta strong{

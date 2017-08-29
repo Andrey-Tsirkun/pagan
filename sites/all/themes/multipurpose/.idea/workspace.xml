@@ -27,18 +27,28 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="379">
+              <caret line="594" column="21" lean-forward="true" selection-start-line="594" selection-start-column="21" selection-end-line="594" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overridden.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node.tpl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/node.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overridden.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/overridden.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="553">
-              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+              <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -82,8 +92,17 @@
       <find>open</find>
       <find>osw</find>
       <find>.pretty-calendar-month</find>
+      <find>.pretty-calendar-week</find>
+      <find>#copyright-wrap</find>
       <find>maps.goog</find>
+      <find>statistics_counter</find>
+      <find>foot</find>
+      <find>.meta li</find>
+      <find>tag</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
       <dir>D:\OpenServer\domains\pagan\sites\all\themes\multipurpose\css</dir>
       <dir>D:\OpenServer\domains\pagan\sites\all\themes\multipurpose</dir>
@@ -93,9 +112,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/global.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/multipurpose.info" />
         <option value="$PROJECT_DIR$/overridden.css" />
+        <option value="$PROJECT_DIR$/templates/node.tpl.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -133,6 +153,11 @@
               <item name="multipurpose" type="b2602c69:ProjectViewProjectNode" />
               <item name="multipurpose" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="multipurpose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multipurpose" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -141,7 +166,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/geolocation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -242,16 +267,15 @@
       <workItem from="1499950083616" duration="1754000" />
       <workItem from="1500287180526" duration="5379000" />
       <workItem from="1500304543728" duration="892000" />
-      <workItem from="1503908026782" duration="7166000" />
+      <workItem from="1503908026782" duration="10366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15191000" />
+    <option name="totallyTimeSpent" value="18391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20775771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -380,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/node.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -410,18 +427,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/overridden.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="553">
+          <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/overridden.css">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        <state relative-caret-position="379">
+          <caret line="594" column="21" lean-forward="true" selection-start-line="594" selection-start-column="21" selection-end-line="594" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/node.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="22" />
           <folding />
         </state>
       </provider>

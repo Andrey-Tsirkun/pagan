@@ -66,3 +66,91 @@
   line-height: 26px;
 }
 /*Event Calendar End*/
+
+/*Views Start*/
+.view-thematic-links .views-field-title a {
+  margin-bottom: 4px;
+  display: block;
+}
+.view-thematic-links .views-field-filepath {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+.view-thematic-links .views-field-filepath a {
+  display: block;
+  position: relative;
+}
+.view-thematic-links .views-field-name,
+.view-thematic-links .views-field-created,
+.view-thematic-links .views-field-comment-count {
+  display: inline-block;
+}
+.view-thematic-links .views-field-body {
+  padding-top: 6px;
+  display: inline;
+}
+.view-thematic-links .views-field-body .field-content {
+  display: inline;
+}
+.view-thematic-links .views-field-body .field-content p {
+  margin: 0;
+  display: inline;
+}
+.view-thematic-links .views-field-view-node {
+  display: inline;
+  margin-left: 3px;
+}
+.view-thematic-links .views-field-name {
+  margin-right: 3px;
+}
+.view-thematic-links .views-field-comment-count {
+  margin: 0 3px;
+  padding-left: 8px;
+}
+.view-thematic-links.view-display-id-page_4 h3 {
+  margin: 0 0 10px;
+}
+.view-thematic-links.view-display-id-page_4 .views-date {
+  display: inline-block;
+}
+.view-thematic-links.view-display-id-page_4 .views-title {
+  display: inline-block;
+}
+
+.view-id-grid_on_front td {
+  width: 33%;
+}
+.view-id-grid_on_front td img {
+  max-width: 100%;
+}
+.view-thematic-links .views-row {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.view-thematic-links .views-row.views-row-last {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.teaserimage {
+  border: 1px solid #CCCCCC;
+  padding: 6px;
+  height: auto;
+  max-width: 97.4%;
+}
+/*Views End*/
+
+/*Breadcrumbs Start*/
+.breadcrumb .delimiter {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent #000000;
+  line-height: 0px;
+  _border-color: #ffffff #ffffff #ffffff #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#ffffff');
+}
+/*Breadcrumbs End*/

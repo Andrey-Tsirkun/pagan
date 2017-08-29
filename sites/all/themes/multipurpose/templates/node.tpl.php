@@ -85,11 +85,11 @@
       <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-  
+
       <?php if ($display_submitted): ?>
         <ul class="meta clearfix">
-          <li><strong>Posted on:</strong> <?php print $date; ?></li>
-          <li><strong>By:</strong> <?php print $name; ?></li>   
+          <li><?php print $date; ?></li>
+          <li><?php print $name; ?></li>
         </ul>
       <?php endif; ?>
 
@@ -106,7 +106,7 @@
     ?>
   </div>
 
-  <?php if (!empty($content['links'])): ?>
+  <?php if (!empty($content['links'] && $page)): ?>
     <footer>
       <?php print render($content['links']); ?>
     </footer>
