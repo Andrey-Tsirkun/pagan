@@ -31,7 +31,7 @@ select { max-width: 100%; }
 /* Body & Main
 ================================================== */
 body { background: #000 url('./images/bg.png')  no-repeat fixed 0 0; color: #100100; font: 14px/1.6 'Open Sans', Helvetica Neue, Helvetica, Arial; -webkit-font-smoothing: antialiased; overflow: auto; }
-body a { color: #02aace; text-decoration: none; }
+body a { color: #a51110; text-decoration: none; }
 body a:hover { color: #000; }
 .container { margin: 0 auto; width: 1000px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 #wrap { background: #fff; padding: 0 20px; }
@@ -137,10 +137,10 @@ a { outline: 0 }
 /* Header
 ================================================== */
 /*header*/
-#header { text-align: left; padding: 40px 0; position: relative; }
+#header { text-align: left; padding: 10px 0; position: relative; }
 /*logo*/
 #logo img { display: block; max-width: 100%; }
-#logo a { color: #000; font-size: 32px; text-decoration: none; }
+#logo a { color: #000; font-size: 32px; text-decoration: none; display: inline-block; }
 /*search*/
 #header-social { position: absolute; top: 50%; margin-top: -20px; right: 0; height: 40px; width: 210px; }
 #header-social li {
@@ -181,7 +181,7 @@ a { outline: 0 }
 /*styling*/
 #site-navigation-wrap { background: #222; margin: 0 -20px 40px; height: 55px; }
 #site-navigation #main-menu > ul li { display: block; float: left; height: 55px; line-height: 55px; }
-#site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; padding: 0 30px; transition: background 0.3s }
+#site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; padding: 0 30px; transition: background, color 0.3s }
 #site-navigation #main-menu > ul > li > a:hover,
 #site-navigation #main-menu > ul > li.sfHover > a,
 #site-navigation #main-menu > ul > li > a.active,
@@ -279,7 +279,7 @@ h1.page-title {
   margin: 0.5em 1em 0.5em 0;
   float: left;
 }
-.page-node #content-wrap img {
+.page-node #content-wrap .node img {
   border: 1px solid #CCCCCC;
   padding: 6px;
   height: auto;
@@ -829,7 +829,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 .comment-unpublished { margin-right: 5px; padding: 5px 2px 5px 5px; }
 
-.comment .comment-text .comment-arrow { border-left: 1px solid #f6f6f6; border-right: 1px solid #f6f6f6; }
+.comment .comment-text .comment-arrow { border-left: 1px solid #fff; border-right: 1px solid #fff; }
 
 /*-------------------------------------------*
 /* Navigation

@@ -30,7 +30,6 @@
      $node_url = $base_url . "/node/" . $nid;
 ?>
 
-<a href="<?php print $node_url; ?>">
-    <?php if ($fields['field_date_date']) {print date_to_genitive($fields['field_date_date']->content); } ?>
-    <?php if ($fields['title']) {print $fields['title'] -> content; } ?>
-</a>
+
+<?php if ($fields['field_date_date']) {print date_to_genitive($fields['field_date_date']->content); } ?>
+<?php if ($fields['title']) {print $fields['title'] -> content; } ?>

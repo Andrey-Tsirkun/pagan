@@ -80,10 +80,10 @@
         <?php endif; ?>
       </div>
       <?php if (theme_get_setting('socialicon_display', 'multipurpose')): ?>
-      <?php 
-      $twitter_url = check_plain(theme_get_setting('twitter_url', 'multipurpose')); 
-      $facebook_url = check_plain(theme_get_setting('facebook_url', 'multipurpose')); 
-      $google_plus_url = check_plain(theme_get_setting('google_plus_url', 'multipurpose')); 
+      <?php
+      $twitter_url = check_plain(theme_get_setting('twitter_url', 'multipurpose'));
+      $facebook_url = check_plain(theme_get_setting('facebook_url', 'multipurpose'));
+      $google_plus_url = check_plain(theme_get_setting('google_plus_url', 'multipurpose'));
       $pinterest_url = check_plain(theme_get_setting('pinterest_url', 'multipurpose'));
       ?>
       <div id="header-social" class="clr">
@@ -114,14 +114,14 @@
     <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span>Menu</a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
-        <?php 
+        <?php
           $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
           print drupal_render($main_menu_tree);
         ?>
       </div>
     </nav>
   </div>
-  
+
   <?php if ($is_front): ?>
   <?php if (theme_get_setting('slideshow_display','multipurpose')): ?>
   <div id="homepage-slider-wrap" class="clr flexslider-container">
@@ -178,19 +178,24 @@
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
         <div id="content-wrap">
           <?php print render($title_prefix); ?>
-          <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php if ($title && !drupal_is_front_page()): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
           <?php print render($title_suffix); ?>
           <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clr"><?php print render($tabs); ?></div><?php endif; ?>
           <?php print render($page['help']); ?>
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-          <?php print render($page['content']); ?>
+          <?php
+            if(drupal_is_front_page())                          {
+              unset($page['content']['system_main']['default_message']);
+            }
+            print render($page['content']);
+          ?>
         </div>
       </section>
 
       <?php if ($page['sidebar_first']): ?>
         <aside id="secondary" class="sidebar-container" role="complementary">
          <?php print render($page['sidebar_first']); ?>
-        </aside> 
+        </aside>
       <?php endif; ?>
     </div>
   </div>
@@ -211,7 +216,7 @@
           </div><?php endif; ?>
         </div>
       <?php endif; ?>
-      
+
       <?php if ($page['footer']): ?>
         <div class="span_1_of_1 col col-1">
           <?php print render($page['footer']); ?>

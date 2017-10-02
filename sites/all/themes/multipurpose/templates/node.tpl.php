@@ -88,7 +88,7 @@
 
       <?php if ($display_submitted): ?>
         <ul class="meta clearfix">
-          <li><?php print $date; ?></li>
+          <li><?php print date_to_genitive($date); ?></li>
           <li><?php print $name; ?></li>
         </ul>
       <?php endif; ?>

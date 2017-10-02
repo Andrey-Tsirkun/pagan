@@ -60,6 +60,11 @@ function multipurpose_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+
+  if (isset($vars['node']) && $vars['node']->type == 'date') {
+      $data_title = date_to_genitive(format_date(strtotime($vars['node']->field_date_date['und'][0]['value']) ,'custom','j F'))  . ' ' . $vars['node']->title;
+      drupal_set_title($data_title);
+  }
 }
 
 /**
@@ -91,7 +96,7 @@ function multipurpose_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
-  $variables['date'] = t('!datetime', array('!datetime' =>  date('j F Y', $variables['created'])));
+  $variables['date'] = t('!datetime', array('!datetime' =>  date('j/m/Y', $variables['created'])));
 }
 
 function multipurpose_page_alter($page) {
@@ -105,4 +110,22 @@ function multipurpose_page_alter($page) {
     )
   );
   drupal_add_html_head($viewport, 'viewport');
+}
+
+function date_to_genitive($string) {
+
+  $string = str_replace("Студзень", "Студня", $string);
+  $string = str_replace("Люты", "Лютага", $string);
+  $string = str_replace("Сакавiк", "Сакавiка", $string);
+  $string = str_replace("Красавiк", "Красавiка", $string);
+  $string = str_replace("Май", "Мая", $string);
+  $string = str_replace("Чэрвень", "Чэрвеня", $string);
+  $string = str_replace("Лiпень", "Лiпеня", $string);
+  $string = str_replace("Жнiвень", "Жнiўня666", $string);
+  $string = str_replace("Верасень", "Верасня", $string);
+  $string = str_replace("Кастрычнiк", "Кастрычнiка", $string);
+  $string = str_replace("Лiстапад", "Лiстапада", $string);
+  $string = str_replace("Снежань", "Снежня", $string);
+
+  return $string;
 }
