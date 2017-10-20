@@ -22,4 +22,4 @@
  * the view is modified.
  */
 ?>
-<?php print t('Калi') . ': ' . date_to_genitive($output); ?>
+<?php print date_to_genitive($output); ?>

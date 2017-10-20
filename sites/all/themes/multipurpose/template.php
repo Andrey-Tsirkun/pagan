@@ -121,9 +121,9 @@ function date_to_genitive($string) {
   $string = str_replace("Май", "Мая", $string);
   $string = str_replace("Чэрвень", "Чэрвеня", $string);
   $string = str_replace("Лiпень", "Лiпеня", $string);
-  $string = str_replace("Жнiвень", "Жнiўня666", $string);
+  $string = str_replace("Жнівень", "Жнiўня", $string);
   $string = str_replace("Верасень", "Верасня", $string);
-  $string = str_replace("Кастрычнiк", "Кастрычнiка", $string);
+  $string = str_replace("Кастрычнік", "Кастрычнiка", $string);
   $string = str_replace("Лiстапад", "Лiстапада", $string);
   $string = str_replace("Снежань", "Снежня", $string);
 
